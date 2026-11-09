@@ -1,4 +1,39 @@
+# Ismail Marketing - robots.txt (updated December 2026)
+
 User-agent: *
-Allow: /
+User-agent: AhrefsSiteAudit
+User-agent: AhrefsBot
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: PerplexityBot
+User-agent: ClaudeBot
+User-agent: anthropic-ai
+User-agent: Google-Extended
+
+# Admin & private
+Disallow: /cgi-bin/
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+# Parameter junk
+Disallow: /*?replytocom=
+Disallow: /*?t=
+Disallow: /*?q=
+Disallow: /*?utm_source=
+Disallow: /*?gclid=
+Disallow: /*?gbraid=
+Disallow: /*?gad_campaignid=
+Disallow: /*?items*
+Disallow: /*?shop/
+
+# Remove the next line once tags, category, feed are noindexed in Yoast and Google has recrawled them
+Disallow: /tag/
+Disallow: /feed/
+Disallow: /*/feed/
+Disallow: /*/feed/*
+Disallow: /*/*/feed/
+Disallow: /*/*/*/feed/
+Disallow: /category/*
 
 Sitemap: https://ismailmarketing.com/sitemap.xml
